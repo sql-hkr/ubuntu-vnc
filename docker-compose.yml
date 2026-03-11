@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  ubuntu-vnc:
+    build: .
+    ports:
+      - "6080:6080"

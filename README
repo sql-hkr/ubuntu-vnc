@@ -1,0 +1,26 @@
+ubuntu-vnc
+==========
+
+Minimal Ubuntu desktop environment accessible via VNC in a web browser.
+
+Requirements
+------------
+
+The following software must be installed on the host system:
+* Docker
+* Docker Compose
+
+Quick Start
+-----------
+
+Build and start the container:
+
+* docker compose up --build
+
+Open the desktop in your browser:
+
+* http://localhost:6080/vnc.html
+
+Default Credentials
+* username: ubuntu
+* password: ubuntu
