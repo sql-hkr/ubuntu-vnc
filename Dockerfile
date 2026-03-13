@@ -13,9 +13,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     sudo \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -m -s /bin/bash $USERNAME \
-    && echo "$USERNAME:$PASSWORD" | chpasswd \
-    && usermod -aG sudo $USERNAME
+RUN useradd -m -s /bin/bash $USER \
+    && echo "$USER:$PASSWORD" | chpasswd \
+    && usermod -aG sudo $USER
 
 USER $USER
 WORKDIR /home/$USER
